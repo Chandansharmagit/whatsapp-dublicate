@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+
+.login-page {
+  width: 50vw; /* Full width for responsiveness */
+  
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form {
+  background: #FFFFFF;
+  width: 100%; /* Full width for responsiveness */
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: all 0.4s ease; /* Smooth transition for form visibility */
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.submit-button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: background 0.3s ease; /* Smooth transition for button background */
+  cursor: pointer; /* Change cursor on button hover */
+}
+
+.submit-button:hover,
+.submit-button:active,
+.submit-button:focus {
+  background: #43A047;
+}
+
+.message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.toggle-link {
+  color: #4CAF50;
+  text-decoration: none;
+  cursor: pointer; /* Change cursor to pointer for the link */
+}
+
+.toggle-link:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.register-form {
+  display: none;
+}
+
+.show {
+  display: block; /* Show the form when the class is added */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+  .login-page {
+    width: 90vw; /* Allow the form to take up more space on smaller screens */
+  }
+
+  .form {
+    padding: 30px; /* Adjust padding */
+  }
+
+  .submit-button {
+    font-size: 16px; /* Slightly larger button text */
+  }
+
+  .form input {
+    font-size: 16px; /* Slightly larger input text */
+  }
+
+  .message {
+    font-size: 14px; /* Adjust message text size */
+  }
+
+  .toggle-link {
+    font-size: 14px; /* Adjust toggle link size */
+  }
+}

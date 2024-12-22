@@ -1,0 +1,64 @@
+/* Navbar.css */
+*{
+  margin: 10px;
+  padding: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #288349; /* WhatsApp green */
+  padding: 10px ;
+  top: 40px; /* Adjust this value to match the height of your header */
+  width: 100vw;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Ensure it stays below the header */
+  position: fixed; /* Make the navbar fixed */
+}
+
+/* Other styles remain unchanged */
+.navbar-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px; /* Add some padding for better touch area */
+}
+
+.navbar-icon {
+  margin-right: 8px;
+}
+
+.navbar-item span {
+  display: block;
+  margin-top: 4px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+/* Underline effect on hover */
+.navbar-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20vw;
+  right: 0;
+  bottom: -10px; /* Position just below the item */
+  height: 3px; /* Height of the underline */
+  background-color: white; /* Color of the underline */
+  transform: scaleX(0); /* Start with scale of 0 */
+  transition: transform 0.3s; /* Smooth transition for underline */
+}
+
+/* Scale underline on hover */
+.navbar-item:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+/* Optional: change color on hover for text */
+.navbar-item:hover span {
+  color: white; /* Ensure text remains white on hover */
+}

@@ -1,0 +1,68 @@
+.update-user-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .update-user-form h2 {
+    text-align: center;
+  }
+  
+  .update-user-form div {
+    margin-bottom: 10px;
+  }
+  
+  .update-user-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .update-user-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropzone {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #aaa;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  .dropzone:hover {
+    border-color: #888;
+  }
+  
+  .preview {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 4px;
+  }
+  
+  .update-user-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .update-user-form button:hover {
+    background-color: #45a049;
+  }
+  
